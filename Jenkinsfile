@@ -5,9 +5,8 @@ pipeline {
         stage('Build & Tag Docker Image') {
             steps {
                 script {
-                    // Uses the modern Docker tool configured in Jenkins Global Tools
-                    docker.withTool('default') {
-                        // Replace 'your-dockerhub-credentials-id' with your actual Jenkins Docker credentials ID
+                    // Uses the 'docker' tool configured in Jenkins Global Tools
+                    docker.withTool('docker') {
                         docker.withRegistry('https://index.docker.io/v1/', 'docker-cred') {
                             def customImage = docker.build("thisismuhammadessa/microservice-adservice:${env.BUILD_ID}")
                             customImage.push()

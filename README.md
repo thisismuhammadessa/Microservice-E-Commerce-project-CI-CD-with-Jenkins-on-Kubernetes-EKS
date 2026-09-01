@@ -1,5 +1,7 @@
  Microservice E-Commerce Project --- CI/CD with Jenkins on Kubernetes (Amazon EKS)
 
+ [![Microservice E-Commerce Architecture](https://github.com/thisismuhammadessa/Microservice-E-Commerce-project-CI-CD-with-Jenkins-on-Kubernetes-EKS/blob/main/architecture-di.png?raw=true)](https://github.com/thisismuhammadessa/Microservice-E-Commerce-project-CI-CD-with-Jenkins-on-Kubernetes-EKS/blob/main/architecture-di.png)
+
 A production-style microservices e-commerce application deployed on
 Amazon EKS (Elastic Kubernetes Service) using Kubernetes, with
 Jenkins providing automated CI/CD.
